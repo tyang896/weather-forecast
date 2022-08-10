@@ -12,16 +12,17 @@
     <header class="d-flex justify-content-center py-2 mb-3">
         <h1 class="font-weight-bold">Weather Dashboard</h1>
     </header>
-    <aside class="row d-flex">
-        <div id="search-form" class="col">
+    <aside class="row d-flex ml-2">
+        <div class="col">
             <h2 class="font-weight-bold">Search for a City:</h2>
-            <form>
-                <input placeholder="San Diego" class="py-2">
-                <button type="button" class="btn btn-primary" id="submit" >Search</button>
+            <form id="search-form">
+                <input class="py-2" id="search-input" placeholder="San Diego" >
+                <button type="button" class="btn btn-primary">Search</button>
             </form>
             <hr>
         </div>
     </aside>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
 </html>
