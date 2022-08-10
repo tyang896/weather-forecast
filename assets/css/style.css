@@ -1,0 +1,25 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: linear-gradient(to left, #003399 0%, #3399ff 100%);
+    color: white;
+}
+
+
+aside{
+    width: 20%;
+}
+
+button{
+    display: block;
+    margin: 13px 0px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+}
