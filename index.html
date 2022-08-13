@@ -12,16 +12,147 @@
     <header class="d-flex justify-content-center py-2 mb-3">
         <h1 class="font-weight-bold">Weather Dashboard</h1>
     </header>
-    <aside class="row d-flex ml-2">
-        <div class="col">
-            <h2 class="font-weight-bold">Search for a City:</h2>
-            <form id="search-form">
-                <input class="py-2" id="search-input" placeholder="San Diego" >
-                <button type="button" class="btn btn-primary">Search</button>
-            </form>
-            <hr>
-        </div>
-    </aside>
+    <div class="d-lg-flex d-block"><!--Anything more than 320px and less than lg will be shown as a block element-->
+        <aside class="row mx-2">
+            <div class="col user-interface">
+                <div>
+                    <h2 class="font-weight-bold">Search for a City:</h2>
+                    <form>
+                        <input class="py-2" id="search-input" placeholder="San Diego" >
+                        <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+                    </form>
+                    <hr>
+                </div>
+                <div>
+                    <button>San Diego</button>
+                    <button>San Diego</button>
+                    <button>San Diego</button>
+                    <button>San Diego</button>
+
+                </div>
+            </div>
+
+        </aside>
+        <main class="col">
+            <div class="card border-dark p-3">
+                <h2 class="font-weight-bold card-title">
+                    Atlanta (M/DD/YYYY) (ICON)
+                </h2>
+                <img>
+                <p>
+                    Temp: 00.00 F
+                </p>
+                <p>
+                    Wind: 0.00 MPH
+                </p>
+                <p>
+                    Humidity: 00%
+                </p>
+                <p>
+                    UV index: 0.00
+                </p>
+            </div>
+            <h3 class="font-weight-bold my-3">5-Day Forecast:</h3>
+            <div class="row forecast-container">
+                <div class="col">
+                    <div class="card-deck">
+                        <div class="card border-dark p-3 mb-3 forecast">
+                            <h4 class="font-weight-bold card-title">
+                                (M/DD/YYYY) (ICON)
+                            </h2>
+                            <img>
+                            <p>
+                                Temp: 00.00 F
+                            </p>
+                            <p>
+                                Wind: 0.00 MPH
+                            </p>
+                            <p>
+                                Humidity: 00%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-deck">
+                        <div class="card border-dark p-3 mb-3 forecast">
+                            <h4 class="font-weight-bold card-title">
+                                (M/DD/YYYY) (ICON)
+                            </h2>
+                            <img>
+                            <p>
+                                Temp: 00.00 F
+                            </p>
+                            <p>
+                                Wind: 0.00 MPH
+                            </p>
+                            <p>
+                                Humidity: 00%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-deck">
+                        <div class="card border-dark p-3 mb-3 forecast">
+                            <h4 class="font-weight-bold card-title">
+                                (M/DD/YYYY) (ICON)
+                            </h2>
+                            <img>
+                            <p>
+                                Temp: 00.00 F
+                            </p>
+                            <p>
+                                Wind: 0.00 MPH
+                            </p>
+                            <p>
+                                Humidity: 00%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-deck">
+                        <div class="card border-dark p-3 mb-3 forecast">
+                            <h4 class="font-weight-bold card-title">
+                                (M/DD/YYYY) (ICON)
+                            </h2>
+                            <img>
+                            <p>
+                                Temp: 00.00 F
+                            </p>
+                            <p>
+                                Wind: 0.00 MPH
+                            </p>
+                            <p>
+                                Humidity: 00%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-deck">
+                        <div class="card border-dark p-3 mb-3 forecast">
+                            <h4 class="font-weight-bold card-title">
+                                (M/DD/YYYY) (ICON)
+                            </h2>
+                            <img>
+                            <p>
+                                Temp: 00.00 F
+                            </p>
+                            <p>
+                                Wind: 0.00 MPH
+                            </p>
+                            <p>
+                                Humidity: 00%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
