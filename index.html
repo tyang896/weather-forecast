@@ -21,24 +21,28 @@
                         <input class="py-2" id="search-input" placeholder="San Diego" >
                         <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
                     </form>
+                    <button id="reset" class="btn-secondary">Clear all</button>
                     <hr>
+                    <!--Error alarms will appear here-->
+                    <div class="alert alert-warning d-none" type="button">
+                      </div>
                 </div>
-                <div>
-                    <button>San Diego</button>
-                    <button>San Diego</button>
-                    <button>San Diego</button>
-                    <button>San Diego</button>
-
+                <div id="display-button">
+                    <!--Buttons will appear in this div element-->
                 </div>
             </div>
 
         </aside>
-        <main class="col">
+        <main class="col d-none">
             <div class="card border-dark p-3">
+                <figure>
+                    <img class="icon"/>
+                </figure>
                 <h2 class="font-weight-bold card-title">
-                    Atlanta (M/DD/YYYY) (ICON)
+                    Atlanta (M/DD/YYYY)
+                    
                 </h2>
-                <img>
+
                 <p>
                     Temp: 00.00 F
                 </p>
@@ -49,7 +53,7 @@
                     Humidity: 00%
                 </p>
                 <p>
-                    UV index: 0.00
+                    UV index: <span>0.00</span>
                 </p>
             </div>
             <h3 class="font-weight-bold my-3">5-Day Forecast:</h3>
@@ -57,10 +61,12 @@
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
+                            <figure>
+                                <img class="icon"/>
+                            </figure>
                             <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY) (ICON)
-                            </h2>
-                            <img>
+                                (M/DD/YYYY)
+                            </h4>
                             <p>
                                 Temp: 00.00 F
                             </p>
@@ -76,10 +82,12 @@
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
+                            <figure>
+                                <img class="icon"/>
+                            </figure>
                             <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY) (ICON)
-                            </h2>
-                            <img>
+                                (M/DD/YYYY)
+                            </h4>
                             <p>
                                 Temp: 00.00 F
                             </p>
@@ -95,10 +103,12 @@
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
+                            <figure>
+                                <img class="icon"/>
+                            </figure>
                             <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY) (ICON)
-                            </h2>
-                            <img>
+                                (M/DD/YYYY)
+                            </h4>
                             <p>
                                 Temp: 00.00 F
                             </p>
@@ -114,10 +124,12 @@
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
+                            <figure>
+                                <img class="icon"/>
+                            </figure>
                             <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY) (ICON)
-                            </h2>
-                            <img>
+                                (M/DD/YYYY)
+                            </h4>
                             <p>
                                 Temp: 00.00 F
                             </p>
@@ -133,10 +145,12 @@
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
+                            <figure>
+                                <img class="icon"/>
+                            </figure>
                             <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY) (ICON)
-                            </h2>
-                            <img>
+                                (M/DD/YYYY)
+                            </h4>
                             <p>
                                 Temp: 00.00 F
                             </p>
@@ -149,6 +163,11 @@
                         </div>
                     </div>
                 </div>
+
+
+
+                
+
             </div>
         </main>
     </div>
