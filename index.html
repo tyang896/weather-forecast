@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Homepage</title>
+    <title>Weather Forecast</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+    <!--Header-->
     <header class="d-flex justify-content-center py-2 mb-3">
         <h1 class="font-weight-bold">Weather Dashboard</h1>
     </header>
-    <div class="d-lg-flex d-block"><!--Anything more than 320px and less than lg will be shown as a block element-->
+    <!--Contents-->
+    <!--Anything more than 320px and less than 992px will be shown as a block element-->
+    <div class="d-lg-flex d-block">
+        <!--Sidebar-->
         <aside class="row mx-2">
-            <div class="col user-interface">
+            <div class="col">
                 <div>
                     <h2 class="font-weight-bold">Search for a City:</h2>
                     <form>
@@ -23,155 +27,110 @@
                     </form>
                     <button id="reset" class="btn-secondary">Clear all</button>
                     <hr>
-                    <!--Error alarms will appear here-->
                     <div class="alert alert-warning d-none" type="button">
-                      </div>
+                    <!--Error alerts will appear inside here-->
+                    </div>
                 </div>
                 <div id="display-button">
-                    <!--Buttons will appear in this div element-->
+                    <!--Buttons of past searches will appear inside this div element-->
                 </div>
             </div>
-
         </aside>
+        <!--Main content. Display is hidden on default-->
         <main class="col d-none">
+            <!--Current day forecast-->
             <div class="card border-dark p-3">
                 <figure>
-                    <img class="icon"/>
+                    <!--Current weather icon will appear here-->
+                    <img/>
                 </figure>
-                <h2 class="font-weight-bold card-title">
-                    Atlanta (M/DD/YYYY)
-                    
-                </h2>
-
-                <p>
-                    Temp: 00.00 F
-                </p>
-                <p>
-                    Wind: 0.00 MPH
-                </p>
-                <p>
-                    Humidity: 00%
-                </p>
-                <p>
-                    UV index: <span>0.00</span>
-                </p>
+                <h2 class="font-weight-bold card-title">Atlanta (M/DD/YYYY)</h2>
+                <p>Temp: 00.00 F</p>
+                <p>Wind: 0.00 MPH</p>
+                <p>Humidity: 00%</p>
+                <p>UV index: <span id="uvIndex">0.00</span></p>
             </div>
             <h3 class="font-weight-bold my-3">5-Day Forecast:</h3>
-            <div class="row forecast-container">
+            <!--Section for 5-day forecast-->
+            <div class="row">
+                <!--Weather forecast card-->
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
                             <figure>
-                                <img class="icon"/>
+                                <!--Weather icon will appear here-->
+                                <img/>
                             </figure>
-                            <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY)
-                            </h4>
-                            <p>
-                                Temp: 00.00 F
-                            </p>
-                            <p>
-                                Wind: 0.00 MPH
-                            </p>
-                            <p>
-                                Humidity: 00%
-                            </p>
+                            <h4 class="font-weight-bold card-title">(M/DD/YYYY)</h4>
+                            <p>Temp: 00.00 F</p>
+                            <p>Wind: 0.00 MPH</p>
+                            <p>Humidity: 00%</p>
                         </div>
                     </div>
                 </div>
+                <!--Weather forecast card-->
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
                             <figure>
-                                <img class="icon"/>
+                                <!--Weather icon will appear here-->
+                                <img/>
                             </figure>
-                            <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY)
-                            </h4>
-                            <p>
-                                Temp: 00.00 F
-                            </p>
-                            <p>
-                                Wind: 0.00 MPH
-                            </p>
-                            <p>
-                                Humidity: 00%
-                            </p>
+                            <h4 class="font-weight-bold card-title">(M/DD/YYYY)</h4>
+                            <p>Temp: 00.00 F</p>
+                            <p>Wind: 0.00 MPH</p>
+                            <p>Humidity: 00%</p>
                         </div>
                     </div>
                 </div>
+                <!--Weather forecast card-->
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
                             <figure>
-                                <img class="icon"/>
+                                <!--Weather icon will appear here-->
+                                <img/>
                             </figure>
-                            <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY)
-                            </h4>
-                            <p>
-                                Temp: 00.00 F
-                            </p>
-                            <p>
-                                Wind: 0.00 MPH
-                            </p>
-                            <p>
-                                Humidity: 00%
-                            </p>
+                            <h4 class="font-weight-bold card-title">(M/DD/YYYY)</h4>
+                            <p>Temp: 00.00 F</p>
+                            <p>Wind: 0.00 MPH</p>
+                            <p>Humidity: 00%</p>
                         </div>
                     </div>
                 </div>
+                <!--Weather forecast card-->
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
                             <figure>
-                                <img class="icon"/>
+                                <!--Weather icon will appear here-->
+                                <img/>
                             </figure>
-                            <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY)
-                            </h4>
-                            <p>
-                                Temp: 00.00 F
-                            </p>
-                            <p>
-                                Wind: 0.00 MPH
-                            </p>
-                            <p>
-                                Humidity: 00%
-                            </p>
+                            <h4 class="font-weight-bold card-title">(M/DD/YYYY)</h4>
+                            <p>Temp: 00.00 F</p>
+                            <p>Wind: 0.00 MPH</p>
+                            <p>Humidity: 00%</p>
                         </div>
                     </div>
                 </div>
+                <!--Weather forecast card-->
                 <div class="col">
                     <div class="card-deck">
                         <div class="card border-dark p-3 mb-3 forecast">
                             <figure>
-                                <img class="icon"/>
+                                <!--Weather icon will appear here-->
+                                <img/>
                             </figure>
-                            <h4 class="font-weight-bold card-title">
-                                (M/DD/YYYY)
-                            </h4>
-                            <p>
-                                Temp: 00.00 F
-                            </p>
-                            <p>
-                                Wind: 0.00 MPH
-                            </p>
-                            <p>
-                                Humidity: 00%
-                            </p>
+                            <h4 class="font-weight-bold card-title">(M/DD/YYYY)</h4>
+                            <p>Temp: 00.00 F</p>
+                            <p>Wind: 0.00 MPH</p>
+                            <p>Humidity: 00%</p>
                         </div>
                     </div>
                 </div>
-
-
-
-                
-
             </div>
         </main>
     </div>
-
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>

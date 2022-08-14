@@ -7,7 +7,6 @@ header{
     color: white;
 }
 
-
 aside{
     width: 25%;
 }
@@ -20,16 +19,12 @@ button{
     padding: 5px;
 }
 
+/*Format for search input*/
 input{
     width: 100%;
 }
 
-/*
-.forecast-container div.col{
-    width: 320px;
-}
-*/
-
+/*Styling for 5 day forecasts*/
 .forecast{
     background-color: #4371d1;
     color: white;
@@ -40,10 +35,8 @@ input{
     background-color: yellow;
 }
 
-
 @media (max-width: 992px) { 
     aside{
         width:100%;
     }
-    
 }
