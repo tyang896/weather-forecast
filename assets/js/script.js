@@ -84,7 +84,7 @@ function handleSubmission(){
         $alert.append($strongEl);
         return;
     }
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + $city + "&appid=" + apiKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + $city + "&appid=" + apiKey;
     //fetch coordinates for city
     fetch(queryURL)
         .then(function(response){
